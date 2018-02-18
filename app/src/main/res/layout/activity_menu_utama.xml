@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FloralWhite"
+    tools:context="com.example.win10.paulinyohanestafernanda_1202150238_modul2.MenuUtama">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="380dp"
+        android:layout_height="205dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/radioGroup"
+        android:src="@drawable/logo_taichan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@+id/dineIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="Choose Order:"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order">
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/order"
+        android:layout_below="@+id/takeAway"
+        android:layout_marginTop="18dp"
+        android:onClick="pesanSekarang"
+        android:text="Pesan sekarang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+    <RadioButton
+        android:id="@+id/takeAway"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/dineIn"
+        android:layout_below="@+id/dineIn"
+        android:layout_marginTop="17dp"
+        android:onClick="checkButton"
+        android:text="Take Away"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <RadioButton
+        android:id="@+id/dineIn"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_order"
+        android:layout_centerVertical="true"
+        android:checked="true"
+        android:onClick="checkButton"
+        android:text="Dine In"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="256dp" />
+</RelativeLayout>

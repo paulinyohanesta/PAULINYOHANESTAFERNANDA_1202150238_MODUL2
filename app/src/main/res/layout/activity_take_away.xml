@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FloralWhite"
+    tools:context="com.example.win10.paulinyohanestafernanda_1202150238_modul2.TakeAway">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/logo_taichan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="23dp"
+        android:layout_alignStart="@+id/et_Name"
+        android:layout_below="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:text="Identitas Pemesan:"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <EditText
+        android:id="@+id/et_Name"
+        android:layout_width="@dimen/editText"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_Phone"
+        android:layout_below="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="31dp"
+        android:hint="Name"
+        android:inputType="textCapSentences"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <EditText
+        android:id="@+id/et_Phone"
+        android:layout_width="@dimen/editText"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_Address"
+        android:layout_below="@+id/et_Name"
+        android:layout_gravity="center_horizontal"
+        android:hint="Phone"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <EditText
+        android:id="@+id/et_Address"
+        android:layout_width="@dimen/editText"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_Note"
+        android:layout_below="@+id/et_Phone"
+        android:layout_gravity="center_horizontal"
+        android:hint="Address"
+        android:inputType="textCapSentences"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <EditText
+        android:id="@+id/et_Note"
+        android:layout_width="@dimen/editText"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Address"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:hint="Note"
+        android:inputType="textCapSentences"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="370dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Note"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:background="@color/maroon"
+        android:onClick="onClickOrder"
+        android:text="PILIH PESANAN"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="438dp" />
+</RelativeLayout>

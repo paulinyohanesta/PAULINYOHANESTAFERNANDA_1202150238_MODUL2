@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FloralWhite"
+    tools:context="com.example.win10.paulinyohanestafernanda_1202150238_modul2.DineIn">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="380dp"
+            android:layout_height="201dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/logo_taichan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Detail Customer:"
+        android:textSize="@dimen/text_size_head"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <EditText
+        android:id="@+id/et_DineInName"
+        android:layout_width="@dimen/width_editText"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="Name"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:text="@string/no_meja"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="304dp" />
+
+    <Spinner
+        android:id="@+id/spinner_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="304dp">
+    </Spinner>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:onClick="onClickOrder"
+        android:padding="@dimen/padding_button"
+        android:text="@string/pilih_pesanan"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+
+</android.support.constraint.ConstraintLayout>
+
